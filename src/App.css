@@ -81,7 +81,7 @@
   align-items: center;
   padding: 30px;
   justify-content: space-between;
-  background: #d3c5bb;
+  background-color: #d3c5bb;
   border-radius: 80px;
 }
 
@@ -97,6 +97,7 @@
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  background-color: #d3c5bb;
 }
 
 .carrinhoButtons button:hover {
