@@ -2,7 +2,6 @@ import { Component } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Produtos from "./components/Produtos";
-import ListaProdutos from "./components/ListaProdutos";
 import Carrinho from "./components/Carrinho";
 
 class App extends Component {
@@ -54,23 +53,11 @@ class App extends Component {
         {/*===== MAIN =====*/}
         <main>
           {/*===== PRODUTOS =====*/}
-          <Produtos>
-
-            {
-              this.state.produtos.map((produto) =>
-              (
-                < ListaProdutos
-                  nome={produto.nome}
-                  imagem={produto.imagem}
-                />
-              )
-              )
-            }
-
-          </Produtos>
+          <Produtos
+            listaProdutos={this.state.produtos}
+          />
           {/*===== CARRINHO =====*/}
           <Carrinho />
-
         </main>
 
       </div >

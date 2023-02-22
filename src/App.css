@@ -21,6 +21,7 @@
 .cardProduto {
   width: 150px;
   height: 150px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -118,7 +119,12 @@
   }
 
   .carrinho {
+    padding: 55px 32px;
     gap: 60px;
+  }
+
+  .carrinhoDisplay {
+    padding: 0 50px;
   }
 }
 
